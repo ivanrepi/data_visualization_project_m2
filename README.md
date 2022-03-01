@@ -1,70 +1,70 @@
-<p align="left"><img src="https://cdn-images-1.medium.com/max/184/1*2GDcaeYIx_bQAZLxWM4PsQ@2x.png"></p>
+# __Diamonds Selection Tool__
 
-# __ih_datamadpt1121_project_m2__
+<p align="center"><img src="https://c.tenor.com/Ay4jVLEIo2oAAAAC/diamonds-sparkle.gif"></p>
 
-![Image](https://github.com/ih-datapt-mad/ih_datamadpt1121_project_m2/blob/main/images/visuals.jpg)
+
+
+## **Introduction**
 
 Data analytics is oftentimes referred to as business intelligence, BI development, or product analytics. However, that is just the tip of the iceberg since the data analytics process includes activities such as data formation/creation, data cleansing, exploratory data analysis (especially this part), feature engineering, and interpretation of suggestions/predictions/results derived from advanced modelling analysis (i.e.: Machine Learning).
 
-For this project you will perform some of these activities in order to analyse the [__diamonds_m2.db__](https://github.com/ih-datapt-mad/ih_datamadpt1121_project_m2/blob/main/db/diamonds_m2.db) `SQLite` database.
+
+<p align="center"><img src="https://www.era-environmental.com/hs-fs/hubfs/ETL-era-environmetal-management.png?width=566&name=ETL-era-environmetal-management.png"></p>
 
 
-```
-conda install -c anaconda sqlite
-```
+
+## **Project Description**
+This is part of Ironhack Data Analytics Bootcamp. The main goal is to build a complete ETL given a database.
+
+For this project we will perform some of these activities in order to analyse the [__diamonds_m2.db__](https://github.com/ivanrepi/data_visualization_project_m2/blob/master/db/diamonds_m2.db) `SQLite` database.
+
+
+### :computer: **Dependencies**
+
+- This repository is tested on **Python 3.7+**.
+
+- Install [pandas](https://pandas.pydata.org/docs/user_guide/index.html) library. Copy and paste next command in your master branch to install it:
+    ```
+    conda install pandas
+    ```
+- Install [numpy](https://numpy.org/doc/stable/) library. Copy and paste next command in your master branch to install it:
+    ```
+    conda install numpy
+    ```
+- Install [SQLite](https://www.sqlite.org/index.html). Copy and paste next command in your master branch to install it:
+    ```
+    conda install -c anaconda sqlite
+    ```
+- Install [SQLAlchemy](https://www.sqlalchemy.org/library.html) library. Copy and paste next command in your master branch to install it:
+    ```
+    conda install -c anaconda sqlalchemy
+    ```
+
+> __IMPORTANT NOTE:__ BI Report have been made with __Tableau__. Account is not needed for visualization. If edit permissions are needed, contact with the administrator.
 
 
 ---
 
-
-
-## **Deliverables:**
+## :clipboard: **Overview:**
 
 A GitHub repository including:
 
-- `exploratory analysis` files that holds the results of __Challenge 1__. 
 
-- `BI Report/Dashboard` meeting the requeriments specified in __Challenge 2__.
+### **Challenge 1: Data Exploration and Preparation**
 
-- `README.md` file explaining the job done and your main conclusions. You may find more info of how to build a README file [here](https://github.com/potacho/data-project-template/blob/master/README.md).
+The goal of this challenge is to perform an __exploratory analysis__ in order to gain initial insight on our diamonds database and prepare the __data model__ that better fits your visualizations. 
 
+The ETL process have been done with Python and Pandas, Numpy, SQLite and SQLAlchemy libraries.
 
+All data exploration and preparation, can be found in the [__main.ipynb__](https://github.com/ivanrepi/data_visualization_project_m2/blob/master/db/main.ipynb) file.
 
----
-
-
-
-## **Presentation:**
-
-- __Time:__ 4 minutes sharp.
-- __Content:__ explain why your dashboard funtionalities are the best for getting meaningful data insights. Support your arguments on the conclusions obtained from the __exploratory analysis__. Conclude your pitch telling us (_in one sentence_) the most important insight (_under your criteria_) you've extracted.
-
-<p align="center"><img src="https://media.giphy.com/media/1Ygis29YXMS35cW90I/giphy.gif"></p>
-
-
-> __IMPORTANT NOTE:__ You only need your BI Report/Dashboard for the presentation (i.e.: no Jupyter, no PowerPoint/Canva)
+<p align="center"><img src="https://www.datasciencecentral.com/wp-content/uploads/2021/10/2808308206.jpeg"></p>
 
 
 
----
 
 
-
-## __Challenge 1: Data Exploration and Preparation__
-
-The goal of this challenge is to perform an __exploratory analysis__ in order to gain initial insight on our diamonds database and prepare the __data model__ that better fits your visualizations. You may use any ETL tool from those explained in class (i.e.: Pandas, PowerQuery, Tableau Public). 
-
-<p align="center"><img src="https://media.giphy.com/media/iP1qEUE7VKhLq/giphy.gif"></p>
-
-> **IMPORTANT NOTE:** You may use any tool and/or workflow that you find more convenient in order to provide the requested output. 
-
-
-
----
-
-
-
-## **Challenge 2: BI Report/Dashboard**
+### **Challenge 2: Diamanond Selection Dashboard**
 
 BI Reports and Dashboards are powerful tools for communicating important information __at-a-glance__. The goal of this challenge is to build a BI Report/Dashboard using our diamonds database that will help the final user (i.e.: yourself) to perform better during _Module 3 project (Kaggle Competition)_. 
 
@@ -80,27 +80,3 @@ A BI Report/Dashboard is not exactly a sequential set of descriptive charts like
 ---
 
 
-
-## **References:**
-
-- [SQLite](https://www.sqlite.org/index.html)
-
-- [SQLAlchemy](https://docs.sqlalchemy.org/en/14/core/engines.html)
-
-- [Visual Analysis Best Practices](https://github.com/ih-datapt-mad/ih_datamadpt1121_project_m2/blob/main/images/visual-analysis-guidebook.pdf)
-
-- [Financial Times Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
-
-- [Matplotlib](https://matplotlib.org/stable/api/index)
-
-- [Pandas Visualization](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.html)
-
-- [Seaborn](https://seaborn.pydata.org/api.html)
-
-- [Plotly](https://plotly.com/graphing-libraries/)
-
-- [Cufflinks](https://coderzcolumn.com/tutorials/data-science/cufflinks-how-to-create-plotly-charts-from-pandas-dataframe-with-one-line-of-code)
-
-- [Tableau](https://github.com/ih-datapt-mad/dataptmad1121_lessons/blob/main/module-2/visualization_tableau.md)
-
-- [Power BI](https://github.com/potacho/power_bi_workshop)
