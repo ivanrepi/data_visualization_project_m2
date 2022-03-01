@@ -47,14 +47,15 @@ For this project we will perform some of these activities in order to analyse th
 
 ## :clipboard: **Overview:**
 
-A GitHub repository including:
 
+### **Part 1: Data Exploration and Preparation**
 
-### **Challenge 1: Data Exploration and Preparation**
+#### _Context_
+This classic dataset contains the prices and other attributes of almost 54,000 diamonds. 
 
 The goal of this challenge is to perform an __exploratory analysis__ in order to gain initial insight on our diamonds database and prepare the __data model__ that better fits your visualizations. 
 
-The ETL process have been done with Python and Pandas, Numpy, SQLite and SQLAlchemy libraries.
+The ETL process have been done with Python, Pandas, Numpy, SQLite and SQLAlchemy libraries.
 
 All data exploration and preparation, can be found in the [__main.ipynb__](https://github.com/ivanrepi/data_visualization_project_m2/blob/master/db/main.ipynb) file.
 
@@ -66,17 +67,72 @@ All data exploration and preparation, can be found in the [__main.ipynb__](https
 
 ### **Challenge 2: Diamanond Selection Dashboard**
 
-BI Reports and Dashboards are powerful tools for communicating important information __at-a-glance__. The goal of this challenge is to build a BI Report/Dashboard using our diamonds database that will help the final user (i.e.: yourself) to perform better during _Module 3 project (Kaggle Competition)_. 
-
-> __Tip:__ you should first consider which data and which indicators should be put on the BI Report/Dashboard. Then, decompose the key indicators from multiple dimensions. 
-
-<p align="center"><img src="https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif"></p>
+#### :point_right: **Understanding the data**
 
 
-A BI Report/Dashboard is not exactly a sequential set of descriptive charts like those you have may built in challenge 1 during the analysis. Instead, a BI Report/Dashboard should be __a single interactive interface built around a specific objetive and which components are logically arranged in order to provide data relevant insights effectively__. Therefore, bear in mind the main objective of the competition: _understand the relationship between diamonds attributes (features) or group of attributes, and its price_.
+#### _Content_
+- PRICE: in US dollars (\$326--\$18,823)
+
+- CARAT: weight of the diamond (0.2--5.01)
+
+- CUT: quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+
+- COLOR: diamond colour, from J (worst) to D (best)
+
+- CLARITY a measurement of how clear the diamond is:
+
+        I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best)
+
+- DIMENSIONS: 
+
+        x length in mm (0--10.74)
+        y width in mm (0--58.9)
+        z depth in mm (0--31.8)
+
+- DEPTH: total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)
+
+- TABLE WIDTH: table width of top of diamond relative to widest point (43--95)
+
+<p align="center"><img src="https://media1.giphy.com/media/G1ifnX4d5tYFACktp9/giphy.gif?cid=ecf05e47q64hy96srwoigwl4heg1mht7nlfzast7g861hauq&rid=giphy.gif&ct=g"></p>
 
 
 
+#### :bar_chart: **Dashboard**
+
+
+Click [__HERE__](https://public.tableau.com/app/profile/ivan.repilado/viz/diamonds_selection/Diamondsselection?publish=yes) to go to Diamonds Selection Tool visualization.
+
+
+---
+
+
+### :file_folder: **Folder structure**
+
+```
+└── project
+    ├── __trash__
+    │ 
+    ├── .git
+    │ 
+    ├── .gitignore
+    │ 
+    ├── images
+    │ 
+    ├── README.md
+    │ 
+    ├── db
+    │   └── diamonds_m2.db
+    │   └── main.ipynb
+    │ 
+    └──data
+        └── diamonds_main.csv
+
+
+```
+
+> Do not forget to include `__trash__` and `.env` in `.gitignore` 
+
+&nbsp;
 ---
 
 
